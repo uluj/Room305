@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     {
         // Calculate the distance to the player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-        Debug.Log("Distance to player: " + distanceToPlayer);
+        
 
         // Check if the enemy should move towards the player
         if (distanceToPlayer > stoppingDistance)
@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
             transform.position += direction * speed * Time.deltaTime;
 
             // Log the enemy's new position
-            Debug.Log("Enemy new position: " + transform.position);
+            
         }
     }
 }
