@@ -18,13 +18,13 @@ public class EnemyCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("colllision from enemy");
         // Check if the collided object is the player
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Enemy collided with Player");
-            // Show the Game Over UI
-            gameOverManager.ShowGameOverUI();
+          Debug.Log("Enemy   collided with Player");
+            // Show the Game Over UI and stop the game
+           // gameOverManager.ShowGameOverUI();
         }
     }
+
 }
